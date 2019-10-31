@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul{
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1F7A8C;
+}
+
+.navbar li{
+  float: left;
+  width: 25%;
+}
+
+.navbar img{
+  margin-top: ;
+  text-align: center;
+}
+
+.navbar li a.Logo{
+  padding: 0;
+}
+
+.navbar li a{
+  font-size: 4rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  color: rgba(255, 255, 0, 1);
+  text-align: center;
+  padding: 20px 0;
+  text-shadow: 3px 3px 5px black;
+}
+
+.navbar li:hover{
+  background-color: #123456
+}
+/* .navbar li img:hover{
+  background-color: #123456
+} */
