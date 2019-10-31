@@ -38,8 +38,74 @@ body{
 }
 
 .navbar li:hover{
-  background-color: #123456
+  background-color: #123456;
 }
 /* .navbar li img:hover{
   background-color: #123456
 } */
+
+.Assignements {
+  height: 599.5px;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  background-color: #1F7A8C;
+  overflow-x: hidden;
+  border-style: solid;
+  border-width: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.AssignmentText {
+  font-size: 20px;
+}
+
+.MathBox {
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  border-width: 5px;
+  width: 79%;
+  height: 200px;
+  font-size: 60px;
+  background-color: #BFDBF7;
+}
+
+.EnglishBox {
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  border-width: 5px;
+  width: 79%;
+  height: 200px;
+  font-size: 60px;
+  background-color: #BFDBF7;
+}
+
+.NorwegianBox {
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  border-width: 5px;
+  width: 79%;
+  height: 200px;
+  font-size: 60px;
+  background-color: #BFDBF7;
+}
+
+.MathBox a {
+  color: #A31621;
+}
+
+
+.EnglishBox a {
+  color: #A31621;
+}
+
+.NorwegianBox a {
+  color: #A31621;
+}
