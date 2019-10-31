@@ -44,68 +44,175 @@ body{
   background-color: #123456
 } */
 
-.Assignements {
-  height: 599.5px;
-  width: 20%;
-  position: fixed;
-  z-index: 1;
-  bottom: 0;
-  right: 0;
-  background-color: #1F7A8C;
-  overflow-x: hidden;
-  border-style: solid;
-  border-width: 5px;
-  margin: 0;
-  padding: 0;
+.headline h1{
+text-align: center;
+color: black;
+font-weight: bold;
+}
+
+.message1 span{
+    text-align: center;
+    color: rgba(255, 255, 0, 1);
+    text-shadow: 3px 3px 5px black;
+    font-size: 30px;
+    padding-top: 5%;
+}
+
+.message2 span{
+    text-align: center;
+    color: rgba(255, 255, 0, 1);
+    text-shadow: 3px 3px 5px black;
+     font-size: 30px;
+    padding-top: 5%;
+}
+.message3 span{
+    text-align: center;
+    color: rgba(255, 255, 0, 1);
+    text-shadow: 3px 3px 5px black;
+     font-size: 30px;
+    padding-top: 5%;
+}
+
+.feedbox{
+    width: 40%;
+    background-color: #1F7A8C;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 25em;
+    border-radius: 15px;
+
+}
+
+.message1 {
+    position: relative;
+    display: inline-block;
+    padding-left: 25%;
+    padding-top: 5%;
+    cursor: pointer;
+
+}
+.drop1 {
+    display: none;
+    position: absolute;
+    background-color: #123456;
+    color: rgba(255, 255, 0, 1);
+    width: 114.5%;
+    border-radius: 15px;
+    padding: 5 px 16px;
+    z-index: 1;
+
+}
+
+.message1:hover .drop1{
+    display: block;
+    font-size: 20px;
+
+}
+
+.message2 {
+    position: relative;
+    display: inline-block;
+    padding-left: 25%;
+    padding-top: 5%;
+    cursor: pointer;
+}
+.drop2 {
+    display: none;
+    position: absolute;
+    width: 114.5%;
+    border-radius: 15px;
+    color: rgba(255, 255, 0, 1);
+    background-color: #123456;
+    padding: 5 px 16px;
+    z-index: 1;
+}
+
+.message2:hover .drop2{
+    display: block;
+    font-size: 20px;
 }
 
 
-.AssignmentText {
-  font-size: 20px;
+.message3 {
+    position: relative;
+    display: inline-block;
+    padding-left: 25%;
+    padding-top: 5%;
+    cursor: pointer;
+}
+.drop3 {
+    display: none;
+    position: absolute;
+    background-color: #123456;
+    color: rgba(255, 255, 0, 1);
+    width: 114.5%;
+    border-radius: 15px;
+    padding: 5 px 16px;
+    z-index: 1;
 }
 
-.MathBox {
-  margin: 0;
-  padding: 0;
-  border-style: solid;
-  border-width: 5px;
-  width: 79%;
-  height: 200px;
-  font-size: 60px;
-  background-color: #BFDBF7;
-}
-
-.EnglishBox {
-  margin: 0;
-  padding: 0;
-  border-style: solid;
-  border-width: 5px;
-  width: 79%;
-  height: 200px;
-  font-size: 60px;
-  background-color: #BFDBF7;
-}
-
-.NorwegianBox {
-  margin: 0;
-  padding: 0;
-  border-style: solid;
-  border-width: 5px;
-  width: 79%;
-  height: 200px;
-  font-size: 60px;
-  background-color: #BFDBF7;
-}
-
-.MathBox a {
-  color: #A31621;
+.message3:hover .drop3{
+    display: block;
+    font-size: 20px;
 }
 
 
-.EnglishBox a {
-  color: #A31621;
+.nymelding {
+    position: absolute;
+    top: 50%;
+    right: 10%;
 }
 
-.NorwegianBox a {
-  color: #A31621;
+.nymelding button{
+    font-size: 20px;
+
+}
+
+.nymelding button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.privatemessage {
+
+    width:20%;
+    background-color: #1F7A8C;
+    height: 15em;
+    position: absolute;
+    top: 59.3%;
+    right: 5.8%;
+    border-radius: 15px;
+}
+
+.privatemessage p{
+    color: rgba(255, 255, 0, 1);
+    text-shadow: 3px 3px 5px black;
+    text-align: left;
+    padding-left: 7%;
+    font-size: 20px;
+    padding-top: 1%;
+}
+
+.melding {
+    background-color: #123456;
+    padding-bottom: 30%;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.sendmelding {
+    position: absolute;
+    top: 90%;
+    right: 10.5%;
+    padding-top: 0.7%;
+
+
+}
+
+.sendmelding button {
+    font-size: 18px;
+
+}
+
+.sendmelding button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
