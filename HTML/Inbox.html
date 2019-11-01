@@ -1,75 +1,65 @@
 <!DOCTYPE html>
 <html>
-
-
 <header>
-  <link rel=stylesheet type="text/css" href="../CSS/CSSACCESS.css">
+  <link rel=stylesheet type="text/css" href="../CSS/style.css">
   <meta charset=utf-8>
-
 </header>
 
 <body>
-
+  <!--           navbar            -->
   <div class="navbar">
-    <a href="Main.html">Home</a>
-    <a class="active" href="Inbox.html">Inbox</a>
-    <a href="Account.html">Account</a>
-
+    <ul>
+      <li>
+        <a class="Logo" href="home.html">
+          <img class="Logo" src="../IMG/Logo.png">
+        </a>
+      </li>
+      <li>
+        <a class="active" href="Home.html">Home</a>
+      </li>
+      <li>
+        <a href="Inbox.html">Inbox</a>
+      </li>
+      <li>
+        <a>Account</a>
+      </li>
+    </ul>
   </div>
   <div class="headline">
-
     <h1> News feed </h1>
-
   </div>
-
-
   <div class="feedbox">
+    <div class="drop1">
+      <p> Here the person sees the last message recived from Geir. </p>
+    </div>
     <div class="message1">
-      <p> Geir Sigvardsson</p>
+      <span> Geir Sigvardsson</span>
     </div>
-
-    <div class="feedbox">
-      <div class="drop1">
-        <p> Here the person sees the last message recived from Geir. </p>
+    <div class="message2">
+      <span> Isak Isaksen</span>
+      <div class="drop2">
+        <p> Here the person sees the last message recived from Isak. </p>
       </div>
-      <div class="message1">
-        <span> Geir Sigvardsson</span>
-
-      </div>
-
-
-      <div class="message2">
-        <p> Isak Isaksen</p>
-      </div>
-
-      <div class="message3">
-        <p> Henrik Henriksen</p>
-      </div>
-
-
     </div>
-
-
-
-
-
-
-    <div class="privatemessage">
-      <p> To : </p>
-      <div class="melding">
-        <p> Write message here </p>
+    <div class="message3">
+      <span> Henrik Henriksen</span>
+      <div class="drop3">
+        <p> Here the person sees the last message recived from Henrik. </p>
       </div>
-
     </div>
-
-
-    <div class="sendmelding">
-      <button type="button"> Send message </button>
-
+  </div>
+  <div class="nymelding">
+    <button type="button"> New message </button>
+  </div>
+  <div class="privatemessage">
+    <p> To : </p>
+    <div class="melding">
+      <p> Write message here </p>
     </div>
-
-
+  </div>
+  <div class="sendmelding">
+    <button type="button"> Send message </button>
+  </div>
 </body>
-
 
 </html>
