@@ -1,6 +1,7 @@
 body{
   margin: 0;
   padding: 0;
+
 }
 
 /* ---------------------------------------------- */
@@ -112,9 +113,13 @@ body{
 .message1 {
   position: relative;
   display: inline-block;
-  padding-left: 25%;
+  margin-left: 25%;
   padding-top: 5%;
   cursor: pointer;
+    margin-bottom: 1em;
+    
+    
+    
 
 }
 .drop1 {
@@ -135,12 +140,18 @@ body{
 
 }
 
+.message1:hover span{
+    font-size: 35px;
+    color: white;
+}
+
 .message2 {
   position: relative;
   display: inline-block;
-  padding-left: 25%;
+  margin-left: 25%;
   padding-top: 5%;
   cursor: pointer;
+    margin-bottom: 1em;
 }
 
 .drop2 {
@@ -159,11 +170,17 @@ body{
   font-size: 20px;
 }
 
+.message2:hover span{
+    font-size: 35px;
+    color: white;
+}
+
+
 
 .message3 {
   position: relative;
   display: inline-block;
-  padding-left: 25%;
+  margin-left: 25%;
   padding-top: 5%;
   cursor: pointer;
 }
@@ -184,12 +201,11 @@ body{
   font-size: 20px;
 }
 
-
-.nymelding {
-  position: absolute;
-  top: 50%;
-  right: 10%;
+.message3:hover span{
+    font-size: 35px;
+    color: white;
 }
+
 
 .nymelding button{
   font-size: 20px;
@@ -225,17 +241,18 @@ body{
   font-size: 15px;
 }
 
-.sendmelding {
-  position: absolute;
-  top: 90%;
-  right: 10.5%;
-  padding-top: 0.7%;
-}
+
 
 .sendmelding button {
   font-size: 18px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .sendmelding button:hover{
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
+@media screen and (max-width: 600px) {
+    .sendmelding button{
+        font-size: 14px;
+    }
