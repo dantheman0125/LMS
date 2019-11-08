@@ -5,10 +5,17 @@
   <meta charset=utf-8>
 </header>
 
-<body>
-  <div class="Login">
-    <h1>Please don't come here</h1>
+<body class="bg-lightBlue">
+  <div class="Login_box">
+    <h1>Log in</h1>
+    <img src="..\IMG\arrowDown.png" alt="Arrow Down">
+    <form action="Home.html">
+      <p>Username</p>
+      <input type="text" name="" value="" required pattern=".{4,14}" title="Min. 4 Characters and Max. 14 Characters">
+      <p>password</p>
+      <input type="password" required pattern=".{4,14}" title="Min. 4 Characters and Max. 14 Characters">
+      <button type="submit" name="button">Login</button>
+    </form>
   </div>
 </body>
-
 </html>
