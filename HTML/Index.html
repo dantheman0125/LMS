@@ -1,20 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <header>
   <link rel=stylesheet type="text/css" href="../CSS/style.css">
   <meta charset=utf-8>
+  <title>Login</title>
 </header>
 
 <body class="bg-lightBlue">
+  <div class="navbar hidden">
+    <ul>
+      <li>
+        <a href="Home.html">
+          <img class="Logo" src="../IMG/Logo.png" alt="Logo">
+        </a>
+      </li>
+      <li>
+        <a class="active" href="Home.html">Home</a>
+      </li>
+      <li>
+        <a href="Inbox.html">Inbox</a>
+      </li>
+      <li>
+        <a href="index.html">Logout</a>
+      </li>
+    </ul>
+  </div>
   <div class="Login_box">
     <img id="Top-Left-Logo" src="../IMG/Logo.png" alt="Logo">
     <h1>Log in</h1>
     <img src="..\IMG\arrowDown.png" alt="Arrow Down">
     <form action="Home.html">
-      <p>Username</p>
-      <input type="text" name="" value="" required pattern=".{4,14}" title="Min. 4 Characters and Max. 14 Characters">
-      <p>password</p>
-      <input type="password" required pattern=".{4,14}" title="Min. 4 Characters and Max. 14 Characters">
+      <label for="Username">Username</label>
+      <input id="Username" type="text" name="Username" value="" required pattern=".{4,14}" title="Min. 4 Characters and Max. 14 Characters"/>
+      <label for="password">password</label>
+      <input id="password" type="password" required pattern=".{4,10}" title="Min. 4 Characters and Max. 10 Characters"/>
       <button type="submit" name="button">Login</button>
     </form>
   </div>
