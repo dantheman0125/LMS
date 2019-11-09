@@ -1,85 +1,232 @@
-body{
+body {
   margin: 0;
   padding: 0;
-
+  background-color: #BFDBF7;
 }
 
-.bg-lightBlue{
+.bg-lightBlue {
   background-color: #BFDBF7;
 }
 
 /* ---------------------------------------------- */
 /* --Navbar-------------------------------------- */
 /* ---------------------------------------------- */
-.navbar ul{
+.navbar ul {
   height: 90px;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #1F7A8C;
+  border-bottom: 5px solid black;
 }
 
-.navbar li{
+.navbar li {
   float: left;
   width: 25%;
 }
 
-.navbar li a.Logo{
+.navbar li a.Logo {
   padding: 10px;
 }
 
-.Logo img{
-  width: 120px;
+img.Logo{
+  width: 180px;
 }
 
-.navbar li a, .navbar li div{
+.navbar li a, .navbar li div {
   font-size: 4rem;
   font-weight: bold;
   text-decoration: none;
   display: block;
   color: rgba(255, 255, 0, 1);
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
   text-shadow: 3px 3px 5px black;
 }
 
-.navbar li:hover{
+.navbar li:hover {
   background-color: #123456;
 }
 
-.navbar li .dropdown-content {
-  top: 90px;
-  right:0;
-  display: none;
-  position: absolute;
-  background-color: #1F7A8C;
-  min-width: 160px;
-  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
-  z-index: 10;
+/* ---------------------------------------------- */
+/* --other navbar-------------------------------- */
+/* ---------------------------------------------- */
+/* .container{
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    background: #1F7A8C;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
 }
 
-.navbar li .dropdown-content a {
-  color: rgba(255, 255, 0, 1);
-  padding: inherit;
+.logo{
+    position: relative;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    top: 8px;
+    left: 50px;
+}
+header{
+    width: 100%;
+}
+nav ul{
+    float: right;
+    margin:0px;
+    padding:0px;
+}
+nav ul li{
+    display: inline-block;
+    padding: 5px 50px;;
+    margin: 0px;
+}
+nav ul li:hover{
+    background-color: #123456;
+}
+
+nav ul li a{
+    margin: 0;
+    padding: 0;
+    font-size: 5rem;
+    text-decoration: none;
+    color: rgba(255, 255, 0, 1);
+    font-weight: bold;
+    text-shadow: 3px 3px 5px black;
+} */
+/* ---------------------------------------------- */
+/* --Multiple Pages------------------------------ */
+/* ---------------------------------------------- */
+h3 {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar_flex {
+  display: flex;
+  border: 1px solid #fff;
+}
+
+/*############ FLEXBOX CONTENT ################*/
+p {
+  color: #fff;
+}
+
+.flexbox_container {
+  max-width: 1300px;
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 50px;
+}
+
+.middlebar {
+  margin-right: 40px;
+  background-color: #0a3d62;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex: 2;
+  order: 2;
+}
+
+.sidebar2 {
+  background-color: #0a3d62;
+  border-radius: 15px;
+  flex: 1;
+  order: 3;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.sidebar2 h2 {
+  padding-bottom: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.sidebar2 a {
   text-decoration: none;
-  display: block;
+  color: #fff;
 }
 
-.navbar li .account:hover .navbar li .dropdown-content {display: block;}
-.navbar li .dropdown-content:hover {background-color: #123456;}
+.middlebar h2 {
+  text-align: center;
+  color: #fff;
+}
+
+table {
+  margin-top: 10px;
+  color: #fff;
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 5px;
+}
+
+td, th {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+td {
+  border: 1px solid #fff;
+}
+
+.oblig {
+  border: 1px solid #fff;
+}
+
+.oblig:hover {
+  background: #ff7675;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.class {
+  text-align: center;
+  font-size: 35px;
+  text-decoration: underline;
+  color: #0a3d62;
+}
+
+.Top-Left {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
 
 /* ---------------------------------------------- */
 /* --Login_Page---------------------------------- */
 /* ---------------------------------------------- */
 .Login_box {
+  position: relative;
   margin: 4% 20%;
   border-radius: 10%;
   background-color: #1F7A8C;
   text-align: center;
-  min-height:   750px;
+  min-height: 750px;
 }
-.Login_box h1{
+
+#Top-Left-Logo {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  width: 250px;
+}
+
+.Login_box h1 {
   font-size: 7rem;
   font-weight: bold;
   color: rgba(255, 255, 0, 1);
@@ -88,7 +235,7 @@ body{
   margin: 0;
 }
 
-.Login_box img{
+.Login_box img {
   width: 100px;
 }
 
@@ -100,14 +247,14 @@ body{
 
 .Login_box button {
   display: block;
-    margin: 30px 40%;
-    background-color: rgba(255, 255, 0, 1);
-    width: 20%;
-    height: 72px;
-    font-size: 48px;
+  margin: 30px 40%;
+  background-color: rgba(255, 255, 0, 1);
+  width: 20%;
+  height: 72px;
+  font-size: 48px;
 }
 
-.Login_box p{
+.Login_box p {
   font-size: 48px;
   color: rgba(255, 255, 0, 1);
   font-weight: bold;
@@ -117,7 +264,7 @@ body{
 /* ---------------------------------------------- */
 /* --Home---------------------------------------- */
 /* ---------------------------------------------- */
-.Assignements {
+.Assignements-Desktop {
   height: 100%;
   width: 20%;
   position: fixed;
@@ -129,72 +276,96 @@ body{
   border-style: solid;
   border-width: 5px;
   margin: 0;
-  padding: 0;
+  color: yellow;
+  border-color: black;
+}
+
+.Assignements-Desktop h1{
+  margin-top: 120px;
+  font-size: 2.3rem;
+  text-align: center;
+  text-shadow: 3px 3px 5px black;
+}
+
+.Assignements-Desktop li{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.Assignements-Mobile{
+  display: none;
+  margin: 50px 7%;
+  width: 80%;
+  background-color: #1f7a8c;
+  border-radius: 50px;
+  padding: 3%;
+  color: yellow;
+  border-color: rgba(255, 255, 0, 1);
+  border-style: dashed;
+  border-width: thick;
+}
+.Assignements-Mobile h1{
+  font-size: 3.5rem;
+  text-align: center;
+  text-shadow: 3px 3px 5px black;
+}
+.Assignements-Mobile li{
+  font-size: 2rem;
 }
 
 .AssignmentText {
   font-size: 20px;
 }
 
-.MathBox {
-  margin: 0;
-  padding: 0;
+.Courses{
+  width: 79%;
+}
+.Courses a{
+  text-decoration: none;
+}
+
+.CourseBox {
   border-style: solid;
   border-width: 5px;
-  width: 79%;
+  border-color: black;
+  width: 100%;
   height: 200px;
   font-size: 60px;
   background-color: #BFDBF7;
+  display: flex;
 }
 
-.EnglishBox {
-  margin: 0;
-  padding: 0;
-  border-style: solid;
-  border-width: 5px;
-  width: 79%;
-  height: 200px;
-  font-size: 60px;
-  background-color: #BFDBF7;
-}
-
-.NorwegianBox {
-  margin: 0;
-  padding: 0;
-  border-style: solid;
-  border-width: 5px;
-  width: 79%;
-  height: 200px;
-  font-size: 60px;
-  background-color: #BFDBF7;
-}
-
-.MathBox a {
+.CourseBox p {
+  text-decoration: underline;
   color: #A31621;
+  width: 60%;
+  font-size: 6.8rem;
+  margin: 0 0 0 40px;
+  align-self: center;
+
+}
+p.big_text{
+  font-size: 5.5rem;
 }
 
-
-.EnglishBox a {
-  color: #A31621;
+.CourseBox img{
+  width: 40%;
+  object-fit: contain;
+  min-width: 150px;
+  padding: 10px 8% 10px 1%;
 }
 
-.NorwegianBox a {
-  color: #A31621;}
-.sendmelding button:hover{
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
 /* ---------------------------------------------- */
 /* --Inbox--------------------+------------------ */
 /* ---------------------------------------------- */
-
-
-.headline h1{
+.headline h1 {
   text-align: center;
   color: black;
   font-weight: bold;
 }
 
-.message1 span{
+.message1 span {
   text-align: center;
   color: rgba(255, 255, 0, 1);
   text-shadow: 3px 3px 5px black;
@@ -202,23 +373,23 @@ body{
   padding-top: 5%;
 }
 
-.message2 span{
+.message2 span {
   text-align: center;
   color: rgba(255, 255, 0, 1);
   text-shadow: 3px 3px 5px black;
-   font-size: 30px;
+  font-size: 30px;
   padding-top: 5%;
 }
 
-.message3 span{
+.message3 span {
   text-align: center;
   color: rgba(255, 255, 0, 1);
   text-shadow: 3px 3px 5px black;
-   font-size: 30px;
+  font-size: 30px;
   padding-top: 5%;
 }
 
-.feedbox{
+.feedbox {
   width: 40%;
   background-color: #1F7A8C;
   margin-left: 30%;
@@ -233,12 +404,13 @@ body{
   margin-left: 25%;
   padding-top: 5%;
   cursor: pointer;
-    margin-bottom: 1em;
-    
-    
-    
-
+  margin-bottom: 1em;
 }
+
+.sendmelding button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
 .drop1 {
   display: none;
   position: absolute;
@@ -248,18 +420,16 @@ body{
   border-radius: 15px;
   padding: 5 px 16px;
   z-index: 1;
-
 }
 
-.message1:hover .drop1{
+.message1:hover .drop1 {
   display: block;
   font-size: 20px;
-
 }
 
-.message1:hover span{
-    font-size: 35px;
-    color: white;
+.message1:hover span {
+  font-size: 35px;
+  color: white;
 }
 
 .message2 {
@@ -268,7 +438,7 @@ body{
   margin-left: 25%;
   padding-top: 5%;
   cursor: pointer;
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .drop2 {
@@ -282,17 +452,15 @@ body{
   z-index: 1;
 }
 
-.message2:hover .drop2{
+.message2:hover .drop2 {
   display: block;
   font-size: 20px;
 }
 
-.message2:hover span{
-    font-size: 35px;
-    color: white;
+.message2:hover span {
+  font-size: 35px;
+  color: white;
 }
-
-
 
 .message3 {
   position: relative;
@@ -313,34 +481,32 @@ body{
   z-index: 1;
 }
 
-.message3:hover .drop3{
+.message3:hover .drop3 {
   display: block;
   font-size: 20px;
 }
 
-<<<<<<< HEAD
 .nymelding {
   position: absolute;
   top: 50%;
   right: 10%;
-=======
-.message3:hover span{
-    font-size: 35px;
-    color: white;
->>>>>>> c9847b786b6453ba4fe80afd9cb0261a232790ea
 }
 
+.message3:hover span {
+  font-size: 35px;
+  color: white;
+}
 
-.nymelding button{
+.nymelding button {
   font-size: 20px;
 }
 
-.nymelding button:hover{
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+.nymelding button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .privatemessage {
-  width:20%;
+  width: 20%;
   background-color: #1F7A8C;
   height: 15em;
   position: absolute;
@@ -349,7 +515,7 @@ body{
   border-radius: 15px;
 }
 
-.privatemessage p{
+.privatemessage p {
   color: rgba(255, 255, 0, 1);
   text-shadow: 3px 3px 5px black;
   text-align: left;
@@ -365,18 +531,63 @@ body{
   font-size: 15px;
 }
 
-
-
 .sendmelding button {
   font-size: 18px;
-    margin-left: 25%;
-    margin-right: 25%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
-.sendmelding button:hover{
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+.sendmelding button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 1081px) {
+  .Courses{
+    width: 99%;
   }
+  .CourseBox{
+    width: 100%;
+  }
+
+  .Assignements-Desktop {
+    display: none;
+  }
+  .Assignements-Mobile {
+    display: block;
+  }
+
+  .CourseBox p{
+    font-size: 5.5rem;
+  }
+  p.big_text{
+    font-size: inherit;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .CourseBox img{
+    display: none;
+  }
+  .CourseBox p{
+    font-size: 5rem;
+  }
+  p.big_text{
+    font-size: inherit;
+  }
+
+  .navbar li a, .navbar li div {
+    font-size: 3rem;
+}
+
+@media (min-width: 900px) {
+  .flexbox_container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 600px) {
-    .sendmelding button{
-        font-size: 14px;
-    }
+  .sendmelding button {
+    font-size: 14px;
+  }
+}
